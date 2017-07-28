@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New York Times Search</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src ="search.js"></script>
+</head>
+<body>
+    <!-- jumbotron -->
+    <div class="jumbotron">
+        <h1 class = "text-center">New York Times Search</h1>
+        
+    </div>
+    <!-- container to hold info -->
+    <div class= "container">
+    
+    <!-- title/rows -->
+        <div class= "row">
+            <div class= "col-md-2"></div>
+            <div class= "col-md-8" id="title"></div>
+            <div class= "col-md-2"></div>
+        </div>
+    <!-- form box -->
+    <form id="search">
+        <div class="form-group">
+            <label for="SearchTerm">SearchTerm</label>
+            <input type="text" class="form-control" id="form1" placeholder="Search">
+        </div>
+
+            <div class="form-group">
+              <label for="SearchTerm">Number of Articles:</label><br>
+              <select>
+                <option value="1">1</option>
+                <option value="3">3</option>
+                <option value="5">5</option>
+                <option value="7">7</option>
+                <option value="10">10</option>
+              </select> 
+            </div>
+          
+          <div class="form-group">
+            <label for="SearchTerm">Start Year (Optional):</label>
+            <input type="text" class="form-control" id="form3" placeholder="Start Year">
+          </div>
+          <div class="form-group">
+            <label for="SearchTerm">End Year (Optional):</label>
+            <input type="text" class="form-control" id="form4" placeholder="End Year">
+          </div>
+
+          <button type="submit" class="btn btn-default" id = "searchButton"><span class= "glyphicon glyphicon-search"></span> Search</button>
+          <button type="submit" class="btn btn-default" id = "clear"><span class= "glyphicon glyphicon-trash"></span> Clear Results</button>
+    </form>
+
+    <div id = "info">
+    </div>
+    
+            
+    </div>
+</body>
+</html>
